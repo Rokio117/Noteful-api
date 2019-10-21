@@ -16,3 +16,5 @@ CREATE TABLE notes (
   modified_date DATE DEFAULT now(),
   content TEXT
 );
+
+--psql -U dunder_mifflin - d noteful -f "C:\Users\Nick\Desktop\nodeProjects\noteful-api\sql-scripts \create_noteful_db.sql"
