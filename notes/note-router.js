@@ -44,7 +44,6 @@ noteRouter
         .location(path.posix.join(req.originalUrl, `/${note.id}`))
         .json(serializeNote(note));
     });
-    console.log(folder, name, content);
   });
 
 noteRouter

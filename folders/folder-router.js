@@ -21,11 +21,9 @@ folderRouter
       .catch(next);
   })
   .post(jsonParser, (req, res, next) => {
-    console.log(req.body);
     const { folder_name } = req.body;
 
     const newFolder = { folder_name: folder_name };
-    console.log(newFolder);
     for (const [key, value] of Object.entries(newFolder)) {
       if (value == null) {
         return res.status(400).json({
@@ -69,7 +67,7 @@ folderRouter
   .patch(jsonParser, (req, res, next) => {
     const { folder_name } = req.body;
     const folder = { folder_name: folder_name };
-    console.log(folder);
+
     const numberOfValues = Object.values(folder).filter(Boolean).length;
     if (numberOfValues === 0)
       return res.status(400).json({
