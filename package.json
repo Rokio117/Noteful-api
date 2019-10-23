@@ -23,10 +23,14 @@
     "knex": "^0.19.5",
     "morgan": "^1.9.1",
     "nodemon": "^1.19.4",
+    "pg": "^7.12.1",
     "postgrator": "^3.10.2",
     "xss": "^1.0.6"
   },
   "engines": {
     "node": "10.16.0"
+  },
+  "devDependencies": {
+    "postgrator-cli": "^3.2.0"
   }
 }
