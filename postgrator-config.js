@@ -9,3 +9,5 @@ module.exports = {
       : process.env.DATABASE_URL,
   SSL: !!process.env.SSL
 };
+
+// heroku config:set NODE_ENV=production &&
