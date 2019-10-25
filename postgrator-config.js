@@ -11,5 +11,7 @@ module.exports = {
       : process.env.DATABASE_URL,
   SSL: !!process.env.SSL
 };
+console.log(process.env.DATABASE_URL, 'second process.env.DATABASE_URL');
 
 // heroku config:set NODE_ENV=production &&
+//@bishwas gautam
