@@ -15,3 +15,5 @@ console.log(process.env.DATABASE_URL, 'second process.env.DATABASE_URL');
 
 // heroku config:set NODE_ENV=production &&
 //@bishwas gautam
+
+//DATABASE_URL = 'postgresql://dunder_mifflin:password@localhost/noteful';
